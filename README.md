@@ -3,7 +3,7 @@
 Automatically updated IP blacklist from TOR Usage alerts (Sekoia.io).
 Contains destination IPs of TOR nodes observed in network traffic.
 
-**Last updated:** 2026-04-10 15:01
+**Last updated:** 2026-04-10 15:09
 **Total active IPs:** 318
 **Retention policy:** 30 days — IPs not seen for 30+ days are automatically removed
 
@@ -20,15 +20,15 @@ Contains destination IPs of TOR nodes observed in network traffic.
 | IP | Alerts | Country |
 |----|--------|---------|
 | 148.251.236.209 | 10 | DE |
-| 195.206.234.89 | 10 | NL |
 | 198.55.103.184 | 10 | IE |
+| 195.206.234.89 | 10 | NL |
 | 31.56.7.161 | 9 | DE |
 | 185.243.218.138 | 9 | NO |
 | 213.239.213.220 | 7 | DE |
 | 45.9.156.16 | 7 | BG |
 | 81.162.55.28 | 7 | UZ |
 | 93.123.118.224 | 7 | NL |
-| 144.76.159.218 | 6 | DE |
+| 38.45.66.185 | 6 | US |
 
 ## Firewall Integration — External Dynamic Lists / Threat Feeds
 
@@ -36,7 +36,7 @@ Contains destination IPs of TOR nodes observed in network traffic.
 > Do **not** import the IPs manually — only dynamic feeds ensure automatic updates
 > and respect the 30-day retention policy (expired IPs are automatically removed).
 
-The file `blacklist.txt` contains one IP per line and is updated every 45 minutes.
+The file `blacklist.txt` contains one IP per line and is updated every hour.
 IPs not seen for 30+ days are automatically purged to keep the list relevant.
 
 ### FortiGate — External Threat Feed
@@ -46,7 +46,7 @@ config system external-resource
     edit "TOR-Blacklist"
         set type address
         set resource "https://raw.githubusercontent.com/f3csystems/TOR_IP/main/blacklist.txt"
-        set refresh-rate 45
+        set refresh-rate 60
     next
 end
 
@@ -65,7 +65,7 @@ config firewall policy
 end
 ```
 
-The FortiGate will automatically fetch and refresh the IP list every 45 minutes.
+The FortiGate will automatically fetch and refresh the IP list every hour.
 
 ### Palo Alto — External Dynamic List (EDL)
 
@@ -91,4 +91,4 @@ The FortiGate will automatically fetch and refresh the IP list every 45 minutes.
 4. **Install Policy**
 
 ---
-*Updated automatically every 45 minutes — IPs expire after 30 days without activity*
+*Updated automatically every hour — IPs expire after 30 days without activity*
