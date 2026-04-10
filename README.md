@@ -1,9 +1,9 @@
 # TOR IP Blacklist
 
 Automatically updated IP blacklist from TOR Usage alerts (Sekoia.io).
-Contains IPs observed using the TOR network (exit nodes, guard nodes, relay nodes).
+Contains destination IPs of TOR nodes observed in network traffic.
 
-**Last updated:** 2026-04-10 14:57
+**Last updated:** 2026-04-10 15:01
 **Total active IPs:** 318
 **Retention policy:** 30 days — IPs not seen for 30+ days are automatically removed
 
@@ -13,27 +13,22 @@ Contains IPs observed using the TOR network (exit nodes, guard nodes, relay node
 - `TOR Usage Generic Rule - Wifi Guest/ Eduroam`
 
 ## Files
-- `blacklist.csv` - Full blacklist with metadata (ip, first_seen, last_seen, alert_count, country, tor_node_types)
+- `blacklist.csv` - Full blacklist with metadata (ip, first_seen, last_seen, alert_count, country)
 - `blacklist.txt` - Plain text IP list (1 IP per line, for External Dynamic List / Threat Feed)
 
-## TOR Node Types Distribution
-| Node Type | Count |
-|-----------|-------|
-| unknown | 318 |
-
 ## Top 10 TOR IPs
-| IP | Alerts | Country | TOR Node Types |
-|----|--------|---------|----------------|
-| 148.251.236.209 | 10 | N/A | unknown |
-| 198.55.103.184 | 10 | N/A | unknown |
-| 195.206.234.89 | 10 | N/A | unknown |
-| 31.56.7.161 | 9 | N/A | unknown |
-| 185.243.218.138 | 9 | N/A | unknown |
-| 213.239.213.220 | 7 | N/A | unknown |
-| 45.9.156.16 | 7 | N/A | unknown |
-| 81.162.55.28 | 7 | N/A | unknown |
-| 93.123.118.224 | 7 | N/A | unknown |
-| 109.70.100.248 | 6 | N/A | unknown |
+| IP | Alerts | Country |
+|----|--------|---------|
+| 148.251.236.209 | 10 | DE |
+| 195.206.234.89 | 10 | NL |
+| 198.55.103.184 | 10 | IE |
+| 31.56.7.161 | 9 | DE |
+| 185.243.218.138 | 9 | NO |
+| 213.239.213.220 | 7 | DE |
+| 45.9.156.16 | 7 | BG |
+| 81.162.55.28 | 7 | UZ |
+| 93.123.118.224 | 7 | NL |
+| 144.76.159.218 | 6 | DE |
 
 ## Firewall Integration — External Dynamic Lists / Threat Feeds
 
