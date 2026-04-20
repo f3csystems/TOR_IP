@@ -3,8 +3,8 @@
 Automatically updated IP blacklist from TOR Usage alerts (Sekoia.io).
 Contains destination IPs of TOR nodes observed in network traffic.
 
-**Last updated:** 2026-04-20 08:22
-**Total active IPs:** 326
+**Last updated:** 2026-04-20 09:22
+**Total active IPs:** 328
 **Retention policy:** 30 days — IPs not seen for 30+ days are automatically removed
 
 ## Rules monitored
