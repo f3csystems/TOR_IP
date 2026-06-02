@@ -10,7 +10,6 @@ Contains destination IPs of TOR nodes observed in network traffic.
 ## Rules monitored
 - `TOR Usage`
 - `TOR Usage Generic Rule`
-- `TOR Usage Generic Rule - Wifi Guest/ Eduroam`
 
 ## Files
 - `blacklist.csv` - Full blacklist with metadata (ip, first_seen, last_seen, alert_count, country)
