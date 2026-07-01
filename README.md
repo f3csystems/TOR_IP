@@ -3,7 +3,7 @@
 Automatically updated IP blacklist from TOR Usage alerts (Sekoia.io).
 Contains destination IPs of TOR nodes observed in network traffic.
 
-**Last updated:** 2026-07-01 02:22
+**Last updated:** 2026-07-01 02:37
 **Total active IPs:** 244
 **Retention policy:** 30 days — IPs not seen for 30+ days are automatically removed
 
@@ -20,15 +20,15 @@ Contains destination IPs of TOR nodes observed in network traffic.
 | IP | Alerts | Country |
 |----|--------|---------|
 | 192.42.116.70 | 84 | CZ |
-| 91.214.191.11 | 84 | CZ |
-| 64.65.63.34 | 84 | CZ |
-| 64.65.0.6 | 84 | CZ |
-| 87.236.199.223 | 84 | CZ |
-| 87.106.148.201 | 84 | CZ |
-| 96.9.98.175 | 84 | CZ |
-| 198.251.84.163 | 84 | CZ |
-| 57.129.74.228 | 84 | CZ |
-| 83.228.207.53 | 84 | CZ |
+| 179.237.66.207 | 84 | CZ |
+| 185.119.117.229 | 84 | CZ |
+| 15.204.141.10 | 84 | CZ |
+| 91.226.144.98 | 84 | CZ |
+| 64.65.0.122 | 84 | CZ |
+| 62.38.144.238 | 84 | CZ |
+| 66.111.2.16 | 84 | CZ |
+| 2.58.52.163 | 84 | CZ |
+| 88.99.2.111 | 84 | CZ |
 
 ## Firewall Integration — External Dynamic Lists / Threat Feeds
 
