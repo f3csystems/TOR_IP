@@ -2,7 +2,7 @@
 
 Automatically updated blacklist of TOR node IP addresses observed in corporate traffic.
 
-**Last updated:** 2026-11-21 10:42
+**Last updated:** 2026-11-21 11:12
 **Total active IPs:** 231
 **Retention policy:** 30 days
 
